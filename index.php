@@ -72,9 +72,12 @@
             default:
                 echo "O número inválido";
         }
-        echo "<br> <br>";
 
+        echo "<br> <br>";
         
+        
+        
+
         // echo "Olá mundo, meu nome é $nome!";
 
         // DOCUMENTAÇÃO DO PHP FICA EM: http://www.php.net
