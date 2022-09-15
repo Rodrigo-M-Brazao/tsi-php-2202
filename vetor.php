@@ -10,7 +10,7 @@ echo "<br><pre>";
 $aluno = [0 => ["matricula" => 94486, "nome" => "Rodrigo" ,"semestre" => 2],
            1 => ["matricula" => 94954, "nome" => "Gustavo" ,"semestre" => 2],
            2 => ["matricula" => 4664, "nome" => "Geovanna" ,"semestre" => 1]];
-$alunos = [];
+
 
 
 
@@ -26,12 +26,12 @@ echo "  <style>
                 <th>Matrícula</th>
                 <th>Semestre</th>
             </tr>";
-        for($i = 0; $i < count($aluno); $i++){
+            foreach ($aluno as $index => $valor) {
+                echo "<tr>
+                <td>{$valor["nome"]}</td><td>{$valor["matricula"]}</td><td>{$valor["semestre"]}</td>
+         </tr>";
+            }
     
-            echo "<tr>
-                       <td>{$aluno[$i]["nome"]}</td><td>{$aluno[$i]["matricula"]}</td><td>{$aluno[$i]["semestre"]}</td>
-                </tr>";
-       }
 echo "</table>";
 // var_dump($alunos);
 
