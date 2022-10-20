@@ -17,10 +17,10 @@
 
     //Executa a inserção
     if($consulta->execute()){
-        echo 'Só sucesso!';
+        $gravou = true;
     }
     else{
-        echo 'Deu ruim, parceiro';
+        $gravou = false;
     }
 
-    echo "<br><br><strong><a href = 'listar.php' style = 'text-decoration:none;color: #000;text-weight:bold;'>Ver lista</a></strong>";
+    include 'index.php';
