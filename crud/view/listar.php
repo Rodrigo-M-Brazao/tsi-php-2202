@@ -12,6 +12,19 @@
         <a href="formIncluir.php"><button class = "btn">Novo Aluno</button></a>
         <br>
         <?php
+        //Mensagem de feedback de atualizar aluno
+        if(isset($atualizar)){
+            if(!$atualizar){
+                echo '<div class = "alert alert-danger">
+                Aluno não atualizado!
+                </div>';
+            }
+            else{
+                echo '<div class = "alert alert-success">
+                    Aluno atualizado com sucesso!
+                </div>';
+            }
+        }
         //Mensagem de feedback de gravar aluno
         if(isset($gravou)){
             if(!$gravou){
@@ -38,6 +51,8 @@
                 </div>';
             }
         }
+
+
         
         ?>
         <form  method="post">
