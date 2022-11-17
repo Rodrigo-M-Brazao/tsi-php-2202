@@ -10,6 +10,7 @@
     <div>
         <ul style = "list-style: none; display: flex;">
             <li>Menu Principal</li>
+            <li> <a href="/tsi-php-2022/crud" style = 'text-decoration:none;'>Alunos</a> </li>
             <li> <a href="/tsi-php-2022/logout" style = 'text-decoration:none;'>Sair</a> </li>
         </ul>
     </div>

@@ -1,6 +1,7 @@
 <?php
     //Busca codigo que conecta no banco
     require_once "../bancoDeDados/conecta.php";
+    require_once "../bancoDeDados/login/autenticacao.php";
     
     //Recebe os dados via post e guarda em variáveis
     $nome = $_POST['nome'];
